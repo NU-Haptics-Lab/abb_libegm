@@ -1,3 +1,13 @@
+# READ THIS RIGHT NOW
+This is a custom version of abb_libegm which allows rapidfromrobot() on the input message. Therefore this repo must be built before the other packages in this workspace.  
+First delete any existing abb_libegm in your paths  
+Second, run this command to build abb_libegm first:  
+`colcon build --packages-select abb_libegm`
+
+Lastly, run the normal `colcon build` to build the rest of the packages
+
+
+
 # abb_libegm
 
 [![Build Status: Ubuntu Bionic (Actions)](https://github.com/ros-industrial/abb_libegm/workflows/CI%20-%20Ubuntu%20Bionic/badge.svg?branch=master)](https://github.com/ros-industrial/abb_libegm/actions?query=workflow%3A%22CI+-+Ubuntu+Bionic%22)
