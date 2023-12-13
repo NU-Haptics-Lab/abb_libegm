@@ -721,7 +721,7 @@ bool parse(wrapper::RAPIDdata* p_target_robot,
   if (p_target_robot)
   {
     p_target_robot->Clear();
-    for (int i = 0; i < 6; ++i){
+    for (int i = 0; i < source_robot.dnum_size(); ++i){
       p_target_robot->add_dnum(source_robot.dnum(i));
     }
     success = true;
