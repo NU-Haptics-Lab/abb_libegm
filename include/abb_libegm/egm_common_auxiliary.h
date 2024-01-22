@@ -363,6 +363,11 @@ bool parse(wrapper::Clock* p_target, const EgmClock& source);
 
 
 /** 
+ * Added by Toby Buckley so that utilization rate can be read through the utilizationRate member of input
+*/
+
+bool parse(wrapper::UtilizationRate* p_target, const double& source);
+/** 
  * Added by Toby Buckley so that joint torques can be read through the RAPIDfromRobot message
 */
 

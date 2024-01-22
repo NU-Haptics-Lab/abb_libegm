@@ -713,6 +713,19 @@ bool parse(wrapper::Clock* p_target, const EgmClock& source)
   return success;
 }
 
+bool parse(wrapper::UtilizationRate* p_target,
+            const double& source)
+{
+  bool success = false;
+
+  if (p_target)
+  {
+    p_target->set_dnum(source);
+    success = true;
+  }
+  return success;
+}
+
 bool parse(wrapper::RAPIDdata* p_target_robot,
            const EgmRAPIDdata& source_robot)
 {

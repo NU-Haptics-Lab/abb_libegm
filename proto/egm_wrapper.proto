@@ -211,6 +211,12 @@ message RAPIDdata
     repeated double dnum = 2;
 }
 
+// easier for the rest of the API if I wrap the double inside a message
+message UtilizationRate
+{
+    optional double dnum = 1;
+}
+
 //======================================================================================================================
 //
 // Primary messages.
@@ -224,6 +230,7 @@ message Input
   optional Feedback feedback = 2;
   optional Planned  planned  = 3;
   optional Status   status   = 4;
+  optional UtilizationRate   utilizationrate = 10;
   optional RAPIDdata rapidfromrobot = 13;
 }
 
